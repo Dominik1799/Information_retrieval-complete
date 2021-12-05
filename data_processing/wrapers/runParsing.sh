@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/opt/bitnami/spark/bin/spark-submit --master spark://sparkmaster:7077 /data/scripts/parse.py && \
+/opt/bitnami/spark/bin/spark-submit --master spark://sparkmaster:7077 /data/data_processing/parse.py && \
 echo Cleaning1 && \
 rm /data/output/main/.*.crc  && \
 echo Concating && \

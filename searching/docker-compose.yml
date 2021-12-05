@@ -19,7 +19,7 @@ services:
       - '8888:8888'
       - '4040:4040'
     volumes:
-      - /mnt/d/Desktop/FIIT/7.semester/VI/data/spark_mount:/data
+      - /mnt/d/Desktop/FIIT/7.semester/VI/Information_retrieval-complete:/data
       - /mnt/d/Desktop/FIIT/7.semester/VI/docker-tmp-volumes/master:/myTemp
       - /mnt/d/Desktop/FIIT/7.semester/VI/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
   spark-worker-1:
@@ -37,7 +37,7 @@ services:
       # - PYSPARK_DRIVER_PYTHON_OPTS=notebook --allow-root --ip=0.0.0.0
       # - PYSPARK_DRIVER_PYTHON=jupyter
     volumes:
-      - /mnt/d/Desktop/FIIT/7.semester/VI/data/spark_mount:/data
+      - /mnt/d/Desktop/FIIT/7.semester/VI/Information_retrieval-complete:/data
       - /mnt/d/Desktop/FIIT/7.semester/VI/docker-tmp-volumes/worker1:/myTemp
   spark-worker-2:
     image: dominik9917/custom_spark
@@ -54,6 +54,6 @@ services:
       # - PYSPARK_DRIVER_PYTHON_OPTS=notebook --allow-root --ip=0.0.0.0
       # - PYSPARK_DRIVER_PYTHON=jupyter
     volumes:
-      - /mnt/d/Desktop/FIIT/7.semester/VI/data/spark_mount:/data
+      - /mnt/d/Desktop/FIIT/7.semester/VI/Information_retrieval-complete:/data
       - /mnt/d/Desktop/FIIT/7.semester/VI/docker-tmp-volumes/worker2:/myTemp
 

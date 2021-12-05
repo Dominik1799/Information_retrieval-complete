@@ -3,12 +3,10 @@ import json
 import time
 
 
-START = "Tatjana Soli"
-END = "Fuglede's conjecture"
-
 LANGUAGE = "en"
-PARSED_WIKIPEDIA = "D:\\Desktop\\FIIT\\7.semester\\VI\\data\\parsed\\{lan}_parsed_sorted.jl".format(lan=LANGUAGE)
-DISK_MAP = "D:\\Desktop\\FIIT\\7.semester\\VI\\data\\parsed\\{lan}_parsed_index_sorted.json".format(lan=LANGUAGE)
+PARSED_WIKIPEDIA = "../data_src/diskmap_indexes/{lan}_parsed_sorted.jl".format(lan=LANGUAGE)
+DISK_MAP = "../data_src/diskmap_indexes/{lan}_parsed_index_sorted.json".format(lan=LANGUAGE)
+
 
 print("Loading disk map...")
 with open(DISK_MAP, encoding="utf-8") as f:

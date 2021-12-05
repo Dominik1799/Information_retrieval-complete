@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/opt/bitnami/spark/bin/spark-submit --master local[*] --packages graphframes:graphframes:0.8.2-spark3.2-s_2.12 /data/scripts/parseToGraph.py && \
+/opt/bitnami/spark/bin/spark-submit --master local[*] --packages graphframes:graphframes:0.8.2-spark3.2-s_2.12 /data/data_processing/parseToGraph.py && \
 echo Cleaning1 && \
 rm /data/output/vertices/.*.crc  && \
 echo Concating && \

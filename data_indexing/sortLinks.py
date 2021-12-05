@@ -2,12 +2,12 @@ import json
 import operator
 from dataclasses import dataclass
 
-LANGUAGE = "en"
-PARSED_WIKIPEDIA = "D:\\Desktop\\FIIT\\7.semester\\VI\\data\\parsed\\{lan}_parsed.jl".format(lan=LANGUAGE)
-DISK_MAP = "D:\\Desktop\\FIIT\\7.semester\\VI\\data\\parsed\\{lan}_parsed_index.json".format(lan=LANGUAGE)
-SORTED_WIKIPEDIA = "D:\\Desktop\\FIIT\\7.semester\\VI\\data\\parsed\\{lan}_parsed_sorted.jl".format(lan=LANGUAGE)
+LANGUAGE = "sk"
+PARSED_WIKIPEDIA = "../data_src/diskmap_indexes/{lan}_parsed.jl".format(lan=LANGUAGE)
+DISK_MAP = "../data_src/diskmap_indexes/{lan}_parsed_index.json".format(lan=LANGUAGE)
+SORTED_WIKIPEDIA_DESTINATION = "../data_src/diskmap_indexes/{lan}_parsed_sorted_dummy.jl".format(lan=LANGUAGE)
 
-output_file = open(SORTED_WIKIPEDIA, "w", encoding="utf-8")
+output_file = open(SORTED_WIKIPEDIA_DESTINATION, "w", encoding="utf-8")
 input_file = open(PARSED_WIKIPEDIA, "r", encoding="utf-8")  # for line by line reading
 input_file_degrees_seek = open(PARSED_WIKIPEDIA, "r", encoding="utf-8")  # for seeking the degree of each graph node
 

@@ -12,7 +12,7 @@ def set_redirects(article):
         return "link"
 
 
-DATA = "/data/en_parsed.jl"
+DATA = "/data/data_src/diskmap_indexes/en_parsed_sorted.jl"
 
 spark = SparkSession.builder.master("local[*]").appName("data to graph preprocessing").getOrCreate()
 sc = spark.sparkContext

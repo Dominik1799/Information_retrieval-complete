@@ -1,18 +1,15 @@
 import lucene
 from java.nio.file import Paths
-from org.apache.lucene.analysis.standard import StandardAnalyzer
 from org.apache.lucene.analysis.core import KeywordAnalyzer
-from org.apache.lucene.index import IndexWriter, IndexWriterConfig, DirectoryReader, IndexReader, Term
-from org.apache.lucene.document import Document, Field, TextField, StoredField, StringField
+from org.apache.lucene.index import IndexWriter, IndexWriterConfig
+from org.apache.lucene.document import Document, Field, StoredField, StringField
 from org.apache.lucene.store import SimpleFSDirectory
-from org.apache.lucene.search import IndexSearcher, TermQuery
-from org.apache.lucene.queryparser.classic import QueryParser
 import json
 
 
-LANGUAGE = "en"
-WIKI_DATA = "/data/data/{lan}_parsed_sorted.jl".format(lan=LANGUAGE)
-INDEX_DESTINATION = "/data/indexes/{lan}".format(lan=LANGUAGE)
+LANGUAGE = "sk"
+WIKI_DATA = "/data/data_src/diskmap_indexes/{lan}_parsed_sorted.jl".format(lan=LANGUAGE)
+INDEX_DESTINATION = "/data/data_src/lucene_indexes/{lan}_dummy".format(lan=LANGUAGE)
 
 lucene.initVM(vmargs=['-Djava.awt.headless=true'])
 # config for index

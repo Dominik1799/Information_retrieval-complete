@@ -6,8 +6,8 @@ import re
 
 
 
-DUMP = "/data/random/sk_countries_redirect.xml"
-TITLES =  "/data/all_titles_sk.txt"
+DUMP = "/data/data_src/original_data/sk_countries_redirect.xml"
+TITLES =  "/data/data_src/original_data/all_titles_sk.txt"
 
 
 spark = SparkSession.builder.master("spark://sparkmaster:7077").appName("data preprocessing").getOrCreate()

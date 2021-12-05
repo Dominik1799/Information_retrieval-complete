@@ -2,12 +2,8 @@ from lucenePathFinder import PathFinder
 import time
 
 
-START = "Tatjana Soli"
-END = "Fuglede's conjecture"
-
 LANGUAGE = "en"
-INDEX_DIR = "/data/indexes/{lan}".format(lan=LANGUAGE)
-
+INDEX_DIR = "../data_src/lucene_indexes/{lan}".format(lan=LANGUAGE)
 
 
 bfs = PathFinder(INDEX_DIR)

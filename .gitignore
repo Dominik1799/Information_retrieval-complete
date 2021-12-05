@@ -2,3 +2,6 @@ data_src/*
 __pycache__/
 *.py[cod]
 *$py.class
+output/*
+searching/run.txt
+data_indexing/run.txt
