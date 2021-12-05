@@ -1,3 +1,5 @@
+File structure:
+
 ```
 .
 ├── data_indexing // scripts used to create indexes - lucene and custom disk indexes. Includes lucene Dockerfile
