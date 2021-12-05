@@ -5,7 +5,7 @@ from pyspark.sql.types import ArrayType
 import re
 
 
-
+# select which wikipedia dump should be processed and which gazeteer of article titles should be used
 DUMP = "/data/data_src/original_data/sk_countries_redirect.xml"
 TITLES =  "/data/data_src/original_data/all_titles_sk.txt"
 
